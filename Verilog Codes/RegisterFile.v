@@ -37,14 +37,7 @@ module RegisterFile(
      GPR[1] = 32'd1;
      GPR[2] = 32'd2;
      GPR[3] = 32'd3;
-     GPR[4] = 32'd4;
-     GPR[5] = 32'd5;
-     GPR[6] = 32'd6;
-     GPR[7] = 32'd7;
-     GPR[8] = 32'd8;
-    end
-//    for(i=1,i<32,i++)
-//    assign GPR[i]=i;
+     end
     
     assign Reg_1 = GPR[R1_idx];
     assign Reg_2 = GPR[R2_idx];
@@ -53,5 +46,4 @@ module RegisterFile(
     begin
      GPR[Wr_idx] <= Data_in;
     end
-           
 endmodule
